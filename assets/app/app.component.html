@@ -1,5 +1,5 @@
 <div class="container">
 	<div row="col-md-8 col-md-offset-2">
-		<app-message></app-message>
+		<app-message [message]="message" (editClicked)="message.content = $event"></app-message>
 	</div>
 </div>
