@@ -23,6 +23,7 @@ export class MessageComponent {
 	@Input() message: Message;
 	@Output() editClicked = new EventEmitter<string>();
 
+	color = 'red';
 	onEdit() {
 		this.editClicked.emit('A new value');
 	}
