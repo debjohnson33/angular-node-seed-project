@@ -9,7 +9,6 @@ export class MessageService {
 	}	
 
 	getMessages() {
-		console.log("this.messages");
 		return this.messages;
 	}
 
