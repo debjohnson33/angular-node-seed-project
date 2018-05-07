@@ -8,7 +8,8 @@ export class MessageService {
 		console.log(this.messages);
 	}	
 
-	getMessage() {
+	getMessages() {
+		console.log("this.messages");
 		return this.messages;
 	}
 
