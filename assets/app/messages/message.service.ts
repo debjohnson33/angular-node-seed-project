@@ -39,6 +39,10 @@ export class MessageService {
 		this.messageEdit.emit(message);
 	}
 
+	updateMessage(message: Message) {
+		
+	}
+
 	deleteMessage(message: Message) {
 		this.messages.splice(this.messages.indexOf(message), 1)
 	}
