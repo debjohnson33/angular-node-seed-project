@@ -21,12 +21,12 @@ export class MessageService {
 	}	
 
 	getMessages() {
-		return this.http.get('http://localhost:3000/messages')
+		return this.http.get('http://localhost:3000/message')
 			.map((response: Response) => {
 				const messages = response.json().obj;
 				let transformedMessages: Messages[] = [];
 				for (let message of messages) {
-					transformedMessages.push(new Message(message.content, message.id, 'Dummy', null));
+					transformedMessages.push(new Message(message.content, 'Dummy', message.id, null));
 				}
 				this.messages = transformedMessages;
 				return transformedMessages;
