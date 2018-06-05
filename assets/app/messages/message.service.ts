@@ -26,7 +26,7 @@ export class MessageService {
 					result.obj.user.firstName, 
 					result.obj._id, 
 					result.obj.user._id);
-				this.message.push(message);
+				this.messages.push(message);
 				return message;
 			})
 			.catch((error: Response) => Observable.throw(error.json()));
